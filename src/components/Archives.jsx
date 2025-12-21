@@ -14,20 +14,17 @@ const Archives = () => {
     {
       id: "vol_13",
       title: "Vol. 13 (2024)",
-      published: "2024-05-31",
-      
+      published: "2024-05-31",   
     },
     {
       id: "vol_12",
       title: "Vol. 12 (2023)",
-      published: "2023-07-14",
-      
+      published: "2023-07-14",   
     },
     {
       id: "vol_11",
       title: "Vol. 11 (2022)",
-      published: "2022-03-05",
-      
+      published: "2022-03-05",  
     },
   ];
 
@@ -53,7 +50,6 @@ const Archives = () => {
                 </p>
               </div>
               <img
-                src={vol.img}
                 alt={vol.title}
                 className="w-full h-auto object-contain"
               />
