@@ -25,7 +25,9 @@ const Header = () => {
   const isAboutActive = aboutRoutes.includes(location.pathname);
 
   return (
-    <header className="bg-gradient-to-r from-blue-600 to-blue-400 text-white shadow-lg rounded">
+   <header className="bg-[#145a45] text-white shadow-lg rounded-b-lg">
+
+
       {/* Top Bar with Logo and Login/Logout (Desktop) */}
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-3">
         <div className="flex items-center rounded-md p-1">
