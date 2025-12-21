@@ -99,17 +99,7 @@ const Header = () => {
                 isActive('/editorial-team')
                   ? 'bg-yellow-500 text-gray-900'
                   : 'hover:bg-yellow-500 hover:text-gray-900'
-              }`}
-            >
-              Editorial Team
-            </Link>
-            <Link
-              to="/current"
-              className={`px-4 py-2 rounded-lg transition-all duration-200 ease-in-out transform hover:scale-105 ${
-                isActive('/current')
-                  ? 'bg-yellow-500 text-gray-900'
-                  : 'hover:bg-yellow-500 hover:text-gray-900'
-              }`}
+              }`}  
             >
               Current
             </Link>
