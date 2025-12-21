@@ -3,7 +3,6 @@ import About from './components/About';
 import Announce from './components/Announce';
 import Archives from './components/Archives';
 import Current from './components/Current';
-import Editorial_team from './components/Editorial_team';
 import Home from './components/Home'
 import Login from './components/Login'
 import Register from './components/Register'
@@ -23,7 +22,6 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/login" element={<Login/>} />
           <Route path="/register" element={<Register/>} />  
-          <Route path="/editorial-team" element={<Editorial_team/>} />
           <Route path="/current" element={<Current/>} />
           <Route path="/archives" element={<Archives/>} />
           <Route path="/announcements" element={<Announce/>} />
