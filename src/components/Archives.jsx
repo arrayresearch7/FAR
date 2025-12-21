@@ -49,6 +49,7 @@ const Archives = () => {
                   <span className="font-semibold">Published:</span> {vol.published}
                 </p>
               </div>
+              
                 alt={vol.title}
                 className="w-full h-auto object-contain"
               />
