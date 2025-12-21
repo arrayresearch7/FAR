@@ -27,7 +27,7 @@ const Footer = () => {
     // //   </div>
     // </footer>
     <>
-      <div className='m-auto'>Hosted by Tuwhera, an initiative of the Auckland University of Techology Library.</div>
+      <div className='m-auto'></div>
     </>
   )
 }
