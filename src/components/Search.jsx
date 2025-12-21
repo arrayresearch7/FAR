@@ -62,7 +62,7 @@ const Search = ({ onSearch }) => {
 
       {/* Logo Images */}
       <div className="p-4 border-t border-gray-200">
-        <img src="./logo11.png" className="w-full h-auto object-contain" />
+        <img src= className="w-full h-auto object-contain" />
       </div>
       <div className="p-4 border-t border-gray-200">
         <a href="https://abdc.edu.au/abdc-journal-quality-list/" target="_blank" rel="noopener noreferrer">
