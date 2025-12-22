@@ -5,6 +5,11 @@ import Search from "./Search";
 
 const articlesData = [
   {
+    title: 
+      "FinTech and Financial Inclusion: Empirical Evidence from Emerging Markets",
+    authors: "Dr. Islam LEBCIR, CS Ankit Shah, Appa Rao Nagubandi, Dr. Satish Manikrao Dhoke, Dr. Gurmeet Singh Sikh, Prof Manoj Kumar Mishra",
+    pages: "81–87",
+    pdfUrl: "/vol-14/16.pdf",
   },
   {
     title: 
