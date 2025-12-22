@@ -162,15 +162,18 @@ const Vol_14 = () => {
 
                 <p className="mt-3 text-slate-600">{article.authors}</p>
 
+                {/* 👇 FLEX SAME FOR ALL */}
                 <div className="mt-6 flex items-center justify-between">
-                  {/* ✅ Pages ONLY for Agentic AI and above */}
-                  {index <= 7 && (
+                  {/* Pages ONLY for Agentic AI and above */}
+                  {index <= 7 ? (
                     <span className="text-sm text-slate-500">
                       Pages · {article.pages}
                     </span>
+                  ) : (
+                    <span />  // empty spacer to keep PDF on right
                   )}
 
-                  {/* ✅ View PDF ALWAYS */}
+                  {/* View PDF ALWAYS on right */}
                   <a
                     href={article.pdfUrl}
                     target="_blank"
