@@ -1,12 +1,12 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2.5rem;
   text-align: left;
 
-  /* Premium dark academic base */
-  background-color: #0b1f17;
-  color: #e5e7eb;
+  /* NEW: Light premium background (identity breaker) */
+  background: linear-gradient(180deg, #f6f8fc 0%, #eef2ff 100%);
+  color: #334155;
 
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -15,24 +15,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Logo behaviour (kept, refined) */
+/* ---------------- LOGO ---------------- */
 .logo {
   height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms ease, transform 300ms ease;
+  padding: 1.2em;
+  will-change: filter, transform;
+  transition: transform 300ms ease, filter 300ms ease;
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 1.2em rgba(212, 175, 55, 0.55));
-  transform: scale(1.03);
+  transform: translateY(-2px) scale(1.04);
+  filter: drop-shadow(0 12px 28px rgba(79, 124, 255, 0.35));
 }
 
-.logo.react:hover {
-  filter: drop-shadow(0 0 1.2em rgba(97, 218, 251, 0.55));
-}
-
-/* Animation kept intact */
+/* keep animation intact */
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -48,18 +44,53 @@
   }
 }
 
-/* Card styling — more journal-like */
+/* ---------------- CARD DESIGN (SOFT + MODERN) ---------------- */
 .card {
-  padding: 2em;
-  border-radius: 12px;
-  background-color: #122d23;
-  border: 1px solid #1f3a2e;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  padding: 2.2em;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.05),
+    0 4px 10px rgba(0, 0, 0, 0.03);
+
+  transition: transform 250ms ease, box-shadow 250ms ease, border-color 250ms ease;
 }
 
-/* Muted academic helper text */
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #4f7cff;
+  box-shadow:
+    0 18px 45px rgba(79, 124, 255, 0.18),
+    0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------------- TEXT HELPERS ---------------- */
 .read-the-docs {
-  color: #9ca3af;
+  color: #64748b;
   font-size: 0.95rem;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.015em;
+}
+
+/* ---------------- GLOBAL BUTTON OVERRIDE ---------------- */
+button,
+.btn,
+a.button {
+  background: linear-gradient(135deg, #4f7cff, #6a9cff);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 0.75rem 1.6rem;
+  font-weight: 600;
+  border: none;
+
+  box-shadow: 0 10px 25px rgba(79, 124, 255, 0.25);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+button:hover,
+.btn:hover,
+a.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 35px rgba(79, 124, 255, 0.35);
 }
