@@ -15,7 +15,7 @@ const Home = () => {
       {/* HERO SECTION */}
       <section className="relative overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-cyan-50">
         <div className="max-w-7xl mx-auto px-6 py-28 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-          
+
           {/* LEFT CONTENT */}
           <div>
             <h1 className="text-5xl sm:text-6xl font-extrabold text-slate-900">
@@ -46,20 +46,42 @@ const Home = () => {
             </div>
           </div>
 
-          {/* RIGHT VISUAL – PREMIUM TEXT */}
+          {/* RIGHT PREMIUM INFO CARD */}
           <div className="hidden lg:block">
-            <div className="rounded-3xl bg-white shadow-2xl p-10 space-y-4">
-              <h3 className="text-lg font-semibold text-slate-900">
-                A Trusted Academic Space
+            <div
+              className="relative rounded-3xl p-10
+              bg-white/70 backdrop-blur-xl
+              shadow-2xl border border-white/60"
+            >
+              {/* Accent bar */}
+              <div className="absolute top-0 left-0 right-0 h-1 rounded-t-3xl
+              bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500" />
+
+              {/* Badge */}
+              <span className="inline-block text-xs font-semibold tracking-wide
+              text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">
+                ACADEMIC PLATFORM
+              </span>
+
+              <h3 className="mt-5 text-xl font-bold text-slate-900">
+                Research with Integrity & Impact
               </h3>
 
-              <p className="text-sm text-slate-600 leading-relaxed">
-                Curated, peer-reviewed research with a focus on quality,
-                transparency, and long-term academic value.
+              <p className="mt-4 text-sm text-slate-600 leading-relaxed">
+                We promote rigorous, transparent, and ethically grounded
+                research—supporting scholars, institutions, and independent
+                researchers worldwide.
               </p>
 
-              <div className="pt-3 border-t border-slate-200 text-xs font-medium text-indigo-600">
-                Structured Research · Open Access · Independent Platform
+              <div className="mt-6 pt-4 border-t border-slate-200
+              text-xs font-medium text-slate-500 flex flex-wrap gap-x-3 gap-y-1">
+                <span>Peer-Reviewed</span>
+                <span>•</span>
+                <span>Open Access</span>
+                <span>•</span>
+                <span>Interdisciplinary</span>
+                <span>•</span>
+                <span>Independent</span>
               </div>
             </div>
           </div>
@@ -81,11 +103,8 @@ const Home = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Card 1 */}
           <div className="bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-2 transition">
-            <span className="text-xs font-semibold text-indigo-600">
-              FEATURED
-            </span>
+            <span className="text-xs font-semibold text-indigo-600">FEATURED</span>
             <h3 className="mt-3 text-lg font-bold text-slate-900">
               Interdisciplinary Research Frontiers
             </h3>
@@ -95,11 +114,8 @@ const Home = () => {
             </p>
           </div>
 
-          {/* Card 2 */}
           <div className="bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-2 transition">
-            <span className="text-xs font-semibold text-indigo-600">
-              FEATURED
-            </span>
+            <span className="text-xs font-semibold text-indigo-600">FEATURED</span>
             <h3 className="mt-3 text-lg font-bold text-slate-900">
               Emerging Scholarly Perspectives
             </h3>
@@ -109,11 +125,8 @@ const Home = () => {
             </p>
           </div>
 
-          {/* Card 3 */}
           <div className="bg-white rounded-3xl shadow-xl p-8 hover:-translate-y-2 transition">
-            <span className="text-xs font-semibold text-indigo-600">
-              FEATURED
-            </span>
+            <span className="text-xs font-semibold text-indigo-600">FEATURED</span>
             <h3 className="mt-3 text-lg font-bold text-slate-900">
               Open-Access Academic Contributions
             </h3>
