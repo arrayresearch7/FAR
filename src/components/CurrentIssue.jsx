@@ -49,7 +49,7 @@ const articles = [
   },
   {
     title: 'Agentic AI for Autonomous CI/CD: Towards Self-Adaptive Financial Infrastructure Pipelines',
-    authors: '1st Avinash Reddy Segireddy',
+    authors: 'Avinash Reddy Segireddy',
     pages: '1-9',
     pdfUrl: '/vol-14/9.pdf',
   },
