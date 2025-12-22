@@ -5,59 +5,61 @@ import Search from "./Search";
 
 const articlesData = [
   {
-    title: 
+    title:
       "FinTech and Financial Inclusion: Empirical Evidence from Emerging Markets",
-    authors: "Dr. Islam LEBCIR, CS Ankit Shah, Appa Rao Nagubandi, Dr. Satish Manikrao Dhoke, Dr. Gurmeet Singh Sikh, Prof Manoj Kumar Mishra",
+    authors:
+      "Dr. Islam LEBCIR, CS Ankit Shah, Appa Rao Nagubandi, Dr. Satish Manikrao Dhoke, Dr. Gurmeet Singh Sikh, Prof Manoj Kumar Mishra",
     pages: "81–87",
     pdfUrl: "/vol-14/16.pdf",
   },
   {
-    title: 
+    title:
       "Cryptocurrency Market Spillovers: Risk Contagion Across Global Financial Systems",
-    authors: "Dr. Hardeep Singh, Dr. Debanjalee Bose, Appa Rao Nagubandi, S. Prabhu, Shrikanta Ganapati Naik",
+    authors:
+      "Dr. Hardeep Singh, Dr. Debanjalee Bose, Appa Rao Nagubandi, S. Prabhu, Shrikanta Ganapati Naik",
     pages: "70–80",
     pdfUrl: "/vol-14/15.pdf",
   },
   {
-    title: 
-      "ESG Investments and Firm Value: A Global Comparative Study",
+    title: "ESG Investments and Firm Value: A Global Comparative Study",
     authors: "Dhiraj Sharma, Sumit Kushwaha, Ashish Gupta, Dr. Poonam",
     pages: "60–69",
     pdfUrl: "/vol-14/14.pdf",
   },
   {
-     title: 
-       "Investor Behavior and Market Trends in the Global Green Bond and Climate Finance Landscape",
-    authors: "Dr. R. Krishna Vardhan Reddy, Dr. B. Anjan Kumar, Dr. K. Kiran Kumar, Dr. S. Sreekanth",
+    title:
+      "Investor Behavior and Market Trends in the Global Green Bond and Climate Finance Landscape",
+    authors:
+      "Dr. R. Krishna Vardhan Reddy, Dr. B. Anjan Kumar, Dr. K. Kiran Kumar, Dr. S. Sreekanth",
     pages: "52–59",
     pdfUrl: "/vol-14/13.pdf",
   },
   {
-    title: 
+    title:
       "Behavioural Biases in Retail Investing: Insights from Post-Pandemic Trading Patterns",
     authors: "Dr. Paladugu Yadaiah, Dr. Putti Selvaraj",
     pages: "42–51",
     pdfUrl: "/vol-14/12.pdf",
   },
   {
-    title: 
+    title:
       "Green Bonds and Climate Finance: Market Trends and Investor Behavior",
     authors: "Aadya Jakhmola",
     pages: "33–41",
     pdfUrl: "/vol-14/11.pdf",
   },
   {
-    title: 
+    title:
       "Exploring the Evolution of FinTech and Technology Acceptance: Bibliometric Analysis of Research Trends and Future Gaps",
-    authors: 'Dr. Rachna Jain, Dr. Shikha Sharma',
-    pages: '10-32',
-    pdfUrl: '/vol-14/10.pdf',
+    authors: "Dr. Rachna Jain, Dr. Shikha Sharma",
+    pages: "10–32",
+    pdfUrl: "/vol-14/10.pdf",
   },
   {
     title:
       "Agentic AI for Autonomous CI/CD: Towards Self-Adaptive Financial Infrastructure Pipelines",
     authors: "Avinash Reddy Segireddy",
-    pages: "1-9",
+    pages: "1–9",
     pdfUrl: "/vol-14/9.pdf",
   },
   {
@@ -138,32 +140,30 @@ const Vol_14 = () => {
 
       {/* MAIN GRID */}
       <section className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-12">
-        {/* ARTICLES */}
         <main className="lg:col-span-8 space-y-10">
           <h2 className="text-3xl font-bold text-slate-900">
             Research Articles
           </h2>
 
           <div className="space-y-8">
-            {filteredArticles.length > 0 ? (
-              filteredArticles.map((article, index) => (
-                <div
-                  key={index}
-                  className="group bg-white rounded-3xl shadow-xl p-8 transition transform hover:-translate-y-1"
+            {filteredArticles.map((article, index) => (
+              <div
+                key={index}
+                className="group bg-white rounded-3xl shadow-xl p-8 transition transform hover:-translate-y-1"
+              >
+                <a
+                  href={article.pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xl font-bold text-slate-900 hover:text-indigo-600"
                 >
-                  <a
-                    href={article.pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xl font-bold text-slate-900 hover:text-indigo-600"
-                  >
-                    {article.title}
-                  </a>
+                  {article.title}
+                </a>
 
-                  <p className="mt-3 text-slate-600">
-                    {article.authors}
-                  </p>
+                <p className="mt-3 text-slate-600">{article.authors}</p>
 
+                {/* 👇 ONLY FOR INDEX <= 7 */}
+                {index <= 7 && (
                   <div className="mt-6 flex items-center justify-between">
                     <span className="text-sm text-slate-500">
                       Pages · {article.pages}
@@ -179,15 +179,12 @@ const Vol_14 = () => {
                       View PDF
                     </a>
                   </div>
-                </div>
-              ))
-            ) : (
-              <p className="text-slate-500">No articles found.</p>
-            )}
+                )}
+              </div>
+            ))}
           </div>
         </main>
 
-        {/* RIGHT FLOATING SEARCH */}
         <aside className="lg:col-span-4">
           <div className="sticky top-28 bg-white/70 backdrop-blur-xl rounded-3xl shadow-xl p-6">
             <Search onSearch={handleSearch} />
