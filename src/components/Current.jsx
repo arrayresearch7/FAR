@@ -48,8 +48,6 @@ const articles = [
     pages: "33–41",
     pdfUrl: "/vol-14/11.pdf",
   },
-
-  // 🔽 YE 2 MISSING WALE (AB FIX)
   {
     title:
       "Exploring the Evolution of FinTech and Technology Acceptance: Bibliometric Analysis of Research Trends and Future Gaps",
@@ -71,40 +69,49 @@ const Current = () => {
     <>
       <Header />
 
-      <main className="bg-slate-50 min-h-screen py-16">
+      <main className="bg-slate-50 min-h-screen py-20">
         <div className="max-w-7xl mx-auto px-6">
+
           {/* HEADER */}
           <div className="mb-12">
-            <h1 className="text-4xl font-extrabold text-purple-800">
-              Vol. 14 (2025)
+            <h1 className="text-4xl font-extrabold text-slate-900">
+              Current Issue
             </h1>
-            <p className="mt-2 text-slate-600">
-              Published: 2025-05-21
+            <p className="mt-2 text-sm text-slate-500">
+              Vol. 14 (2025) · Published: 2025-05-21
             </p>
           </div>
 
-          <h2 className="text-xl font-semibold text-purple-700 mb-6">
-            Articles submitted to regular issue
-          </h2>
-
-          {/* ARTICLE LIST */}
-          <div className="space-y-8">
+          {/* GRID — SAME AS CurrentIssue.jsx */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {articles.map((article, index) => (
               <div
                 key={index}
-                className="bg-white rounded-2xl shadow-md p-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6"
+                className="group bg-white rounded-2xl border border-slate-200
+                shadow-sm hover:shadow-xl transition-all duration-300
+                flex flex-col justify-between"
               >
-                <div>
-                  <h3 className="text-lg font-bold text-purple-700">
+                <div className="p-6 space-y-4">
+                  <a
+                    href={article.pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-lg font-semibold text-slate-900
+                    group-hover:text-blue-600 transition"
+                  >
                     {article.title}
-                  </h3>
-                  <p className="mt-2 text-slate-600 text-sm">
+                  </a>
+
+                  <p className="text-sm text-slate-600 line-clamp-3">
                     {article.authors}
                   </p>
                 </div>
 
-                <div className="flex items-center gap-6 shrink-0">
-                  <span className="text-sm text-slate-500">
+                <div
+                  className="px-6 py-4 border-t border-slate-100
+                  flex items-center justify-between"
+                >
+                  <span className="text-xs text-slate-500">
                     Pages: {article.pages}
                   </span>
 
@@ -112,9 +119,10 @@ const Current = () => {
                     href={article.pdfUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-5 py-2 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-500 text-white font-semibold shadow hover:shadow-lg transition"
+                    className="text-sm font-semibold text-blue-600
+                    hover:text-blue-700"
                   >
-                    View PDF
+                    View PDF →
                   </a>
                 </div>
               </div>
