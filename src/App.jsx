@@ -18,8 +18,8 @@ import ArticleDetail from "./components/ArticleDetail";
 function App() {
   return (
     <div className="relative min-h-screen overflow-hidden">
-      
-      {/* 🔹 GLOBAL LOGO WATERMARK BACKGROUND */}
+
+      {/* 🔹 GLOBAL WATERMARK LOGO */}
       <div
         className="fixed inset-0 pointer-events-none z-0
         flex items-center justify-center"
@@ -28,15 +28,15 @@ function App() {
           src="/logo_a.png"
           alt="Background Logo"
           className="
-            w-[520px] max-w-[80%]
-            opacity-[0.05]
-            blur-[1px]
+            w-[680px] max-w-[85%]
+            opacity-[0.12]
+            blur-[0.5px]
             select-none
           "
         />
       </div>
 
-      {/* 🔹 MAIN APP CONTENT */}
+      {/* 🔹 MAIN CONTENT */}
       <div className="relative z-10">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -52,10 +52,7 @@ function App() {
           <Route path="/vol_13" element={<Vol_13 />} />
           <Route path="/vol_14" element={<Vol_14 />} />
           <Route path="/vol_11" element={<Vol_11 />} />
-          <Route
-            path="/article/:volume/:index"
-            element={<ArticleDetail />}
-          />
+          <Route path="/article/:volume/:index" element={<ArticleDetail />} />
         </Routes>
       </div>
     </div>
