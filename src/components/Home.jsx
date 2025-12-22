@@ -21,7 +21,7 @@ const Home = () => {
             <div className="lg:col-span-2 space-y-10">
               <div className="border-l-4 border-[#d4af37] pl-6">
                 <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-[#f5f5f5]">
-                  Applied Finance-Letters
+                  Applied Finance Insights
                 </h1>
                 <p className="mt-6 max-w-3xl text-base sm:text-lg leading-relaxed text-gray-300">
                   This journal is an independent academic platform created to support the dissemination of research and scholarly discussion in finance, economics, and related interdisciplinary areas. The journal aims to provide a neutral space for researchers, educators, and professionals to share original ideas and analytical insights. The platform operates independently and does not represent or claim affiliation with any university, institution, or existing academic journal.
