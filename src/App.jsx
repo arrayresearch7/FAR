@@ -13,7 +13,7 @@ import Vol_12 from './components/Vol_12';
 import Vol_13 from './components/Vol_13';
 import Vol_14 from './components/Vol_14';
 import Vol_11 from './components/Vol_11';
-
+import ArticleDetail from "./components/ArticleDetail";
 
 function App() {
   return (
@@ -32,6 +32,7 @@ function App() {
           <Route path="/vol_13" element={<Vol_13/>} />
           <Route path="/vol_14" element={<Vol_14/>} />
           <Route path="/vol_11" element={<Vol_11/>}></Route>
+          <Route path="/article/:volume/:index" element={<ArticleDetail />} />
       </Routes>
     </>
   )
