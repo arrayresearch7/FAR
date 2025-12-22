@@ -7,6 +7,13 @@ const articlesData = [
   {
   },
   {
+    title: 
+      "ESG Investments and Firm Value: A Global Comparative Study",
+    authors: "Dhiraj Sharma, Sumit Kushwaha, Ashish Gupta, Dr. Poonam",
+    pages: "60–69",
+    pdfUrl: "/vol-14/14.pdf",
+  },
+  {
      title: 
        "Investor Behavior and Market Trends in the Global Green Bond and Climate Finance Landscape",
     authors: "Dr. R. Krishna Vardhan Reddy, Dr. B. Anjan Kumar, Dr. K. Kiran Kumar, Dr. S. Sreekanth",
