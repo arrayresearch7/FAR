@@ -8,6 +8,13 @@ const articlesData = [
   },
   {
     title: 
+      "Cryptocurrency Market Spillovers: Risk Contagion Across Global Financial Systems",
+    authors: "Dr. Hardeep Singh, Dr. Debanjalee Bose, Appa Rao Nagubandi, S. Prabhu, Shrikanta Ganapati Naik",
+    pages: "70–80",
+    pdfUrl: "/vol-14/15.pdf",
+  },
+  {
+    title: 
       "ESG Investments and Firm Value: A Global Comparative Study",
     authors: "Dhiraj Sharma, Sumit Kushwaha, Ashish Gupta, Dr. Poonam",
     pages: "60–69",
