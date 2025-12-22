@@ -5,6 +5,11 @@ import Search from "./Search";
 
 const articlesData = [
   {
+    title: 
+      "Green Bonds and Climate Finance: Market Trends and Investor Behavior",
+    authors: "Aadya Jakhmola",
+    pages: "33–41",
+    pdfUrl: "/vol-14/11.pdf",
   },
   {
     title: 
