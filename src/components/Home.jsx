@@ -16,22 +16,36 @@ const Home = () => {
       <section className="relative overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-cyan-50">
         <div className="max-w-7xl mx-auto px-6 py-28 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
 
-          {/* LEFT CONTENT */}
-          <div>
-            <h1 className="text-5xl sm:text-6xl font-extrabold text-slate-900">
+          {/* LEFT 3D CARD */}
+          <div
+            className="relative rounded-[32px] p-12
+            bg-white/80 backdrop-blur-xl
+            shadow-[0_30px_80px_rgba(0,0,0,0.12)]
+            border border-white/60
+            transition-transform duration-500
+            hover:-translate-y-2 hover:shadow-[0_40px_120px_rgba(0,0,0,0.18)]"
+          >
+            {/* top glow */}
+            <div className="absolute -top-10 -right-10 w-40 h-40
+            bg-gradient-to-br from-indigo-400/30 to-cyan-400/30
+            rounded-full blur-3xl" />
+
+            <h1 className="relative text-5xl sm:text-6xl font-extrabold text-slate-900">
               Applied Finance Insights
             </h1>
-            <p className="mt-6 text-lg text-slate-600 max-w-xl">
+
+            <p className="relative mt-6 text-lg text-slate-600 max-w-xl">
               An independent research platform showcasing peer-reviewed and
               interdisciplinary scholarly work across finance, economics,
               technology, and policy.
             </p>
 
-            <div className="mt-10 flex gap-4">
+            <div className="relative mt-10 flex gap-4">
               <button
                 onClick={() => navigate("/archives")}
                 className="px-7 py-3 rounded-xl font-semibold text-white
-                bg-gradient-to-r from-indigo-500 to-cyan-500 shadow"
+                bg-gradient-to-r from-indigo-500 to-cyan-500
+                shadow-lg hover:shadow-xl transition"
               >
                 Explore Research
               </button>
@@ -39,25 +53,24 @@ const Home = () => {
               <button
                 onClick={() => navigate("/submissions")}
                 className="px-7 py-3 rounded-xl font-semibold
-                border border-slate-300 bg-white"
+                border border-slate-300 bg-white
+                hover:bg-slate-50 transition"
               >
                 Submit Your Work
               </button>
             </div>
           </div>
 
-          {/* RIGHT PREMIUM INFO CARD */}
+          {/* RIGHT INFO CARD (same as before) */}
           <div className="hidden lg:block">
             <div
               className="relative rounded-3xl p-10
               bg-white/70 backdrop-blur-xl
               shadow-2xl border border-white/60"
             >
-              {/* Accent bar */}
               <div className="absolute top-0 left-0 right-0 h-1 rounded-t-3xl
               bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500" />
 
-              {/* Badge */}
               <span className="inline-block text-xs font-semibold tracking-wide
               text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">
                 ACADEMIC PLATFORM
@@ -69,18 +82,14 @@ const Home = () => {
 
               <p className="mt-4 text-sm text-slate-600 leading-relaxed">
                 We promote rigorous, transparent, and ethically grounded
-                research—supporting scholars, institutions, and independent
-                researchers worldwide.
+                research—supporting scholars and institutions worldwide.
               </p>
 
               <div className="mt-6 pt-4 border-t border-slate-200
               text-xs font-medium text-slate-500 flex flex-wrap gap-x-3 gap-y-1">
-                <span>Peer-Reviewed</span>
-                <span>•</span>
-                <span>Open Access</span>
-                <span>•</span>
-                <span>Interdisciplinary</span>
-                <span>•</span>
+                <span>Peer-Reviewed</span> •
+                <span>Open Access</span> •
+                <span>Interdisciplinary</span> •
                 <span>Independent</span>
               </div>
             </div>
@@ -109,8 +118,7 @@ const Home = () => {
               Interdisciplinary Research Frontiers
             </h3>
             <p className="mt-3 text-sm text-slate-600">
-              Research integrating finance, technology, management, and social
-              sciences to address complex real-world challenges.
+              Research integrating finance, technology, and social sciences.
             </p>
           </div>
 
@@ -120,8 +128,7 @@ const Home = () => {
               Emerging Scholarly Perspectives
             </h3>
             <p className="mt-3 text-sm text-slate-600">
-              Selected studies highlighting new academic trends, innovative
-              methodologies, and evolving research directions.
+              Innovative methodologies and evolving research directions.
             </p>
           </div>
 
@@ -131,8 +138,7 @@ const Home = () => {
               Open-Access Academic Contributions
             </h3>
             <p className="mt-3 text-sm text-slate-600">
-              Freely accessible scholarly work supporting transparent knowledge
-              sharing and global academic collaboration.
+              Transparent knowledge sharing and global collaboration.
             </p>
           </div>
         </div>
