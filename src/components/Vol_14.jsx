@@ -5,6 +5,15 @@ import Search from "./Search";
 
 const articlesData = [
   {
+  },
+  {
+     title: 
+       "Investor Behavior and Market Trends in the Global Green Bond and Climate Finance Landscape",
+    authors: "Dr. R. Krishna Vardhan Reddy, Dr. B. Anjan Kumar, Dr. K. Kiran Kumar, Dr. S. Sreekanth",
+    pages: "52–59",
+    pdfUrl: "/vol-14/13.pdf",
+  },
+  {
     title: 
       "Behavioural Biases in Retail Investing: Insights from Post-Pandemic Trading Patterns",
     authors: "Dr. Paladugu Yadaiah, Dr. Putti Selvaraj",
