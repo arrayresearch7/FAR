@@ -162,24 +162,25 @@ const Vol_14 = () => {
 
                 <p className="mt-3 text-slate-600">{article.authors}</p>
 
-                {/* 👇 ONLY FOR INDEX <= 7 */}
-                {index <= 7 && (
-                  <div className="mt-6 flex items-center justify-between">
+                <div className="mt-6 flex items-center justify-between">
+                  {/* ✅ Pages ONLY for Agentic AI and above */}
+                  {index <= 7 && (
                     <span className="text-sm text-slate-500">
                       Pages · {article.pages}
                     </span>
+                  )}
 
-                    <a
-                      href={article.pdfUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-6 py-2 rounded-full font-semibold text-white
-                      bg-gradient-to-r from-indigo-500 to-cyan-500 shadow hover:shadow-lg"
-                    >
-                      View PDF
-                    </a>
-                  </div>
-                )}
+                  {/* ✅ View PDF ALWAYS */}
+                  <a
+                    href={article.pdfUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-6 py-2 rounded-full font-semibold text-white
+                    bg-gradient-to-r from-indigo-500 to-cyan-500 shadow hover:shadow-lg"
+                  >
+                    View PDF
+                  </a>
+                </div>
               </div>
             ))}
           </div>
