@@ -41,6 +41,12 @@ const articles = [
     pages: "33–41",
     pdfUrl: "/vol-14/11.pdf",
   },
+  {
+  title: 'Exploring the Evolution of FinTech and Technology Acceptance: Bibliometric Analysis of Research Trends and Future Gaps',
+  authors: 'Dr. Rachna Jain, Dr. Shikha Sharma',
+  pages: '10-32',
+  pdfUrl: '/vol-14/10.pdf',
+  },
 ];
 
 const CurrentIssue = () => {
