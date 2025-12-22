@@ -44,10 +44,10 @@ const Search = ({ onSearch }) => {
       {/* Journal Info */}
       <div className="p-5 border-b border-gray-700 text-sm text-gray-300">
         <p className="font-semibold text-base text-[#d4af37] mb-2">
-          Applied Finance Letters
+          Applied Finance Insights
         </p>
-        <p className="mt-1">Print ISSN: 2253-5799</p>
-        <p>Online ISSN: 2253-5802</p>
+        <p className="mt-1"></p>
+        <p></p>
       </div>
 
       {/* ABDC Logo */}
