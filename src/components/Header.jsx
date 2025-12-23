@@ -53,11 +53,11 @@ const Header = () => {
               >
                 <img
                   src="/logo_a.png"
-                  alt="Applied Finance Insights"
+                  alt="Applied Finance Letters Insight"
                   className="h-9 drop-shadow-md"
                 />
                 <span className="text-white font-bold tracking-wide">
-                  Applied Finance Insights
+                  Applied Finance Letters Insight
                 </span>
               </Link>
 
