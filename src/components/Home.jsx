@@ -31,7 +31,7 @@ const Home = () => {
             rounded-full blur-3xl" />
 
             <h1 className="relative text-5xl sm:text-6xl font-extrabold text-slate-900">
-              Applied Finance Letters Insight
+              Applied- Finance Letters Insight
             </h1>
 
             <p className="relative mt-6 text-lg text-slate-600 max-w-xl">
