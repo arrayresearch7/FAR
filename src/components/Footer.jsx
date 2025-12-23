@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <p className="font-bold text-slate-900">
-            Applied Finance Insights
+            Applied Finance Letters Insight
           </p>
           <p className="mt-2 text-sm text-slate-600">
             An independent open-access platform for interdisciplinary academic research.
@@ -14,7 +14,7 @@ const Footer = () => {
         </div>
 
         <div className="text-sm text-slate-500 md:text-right">
-          <p>© {new Date().getFullYear()} Applied Finance Insights</p>
+          <p>© {new Date().getFullYear()} Applied Finance Letters Insight</p>
           <p className="mt-1">
           </p>
         </div>
