@@ -141,7 +141,7 @@ const Vol_14 = () => {
             Volume 14 · 2025
           </h1>
           <p className="mt-4 text-slate-600">
-            Published on December 16, 2025
+            Published on December 23, 2025
           </p>
         </div>
       </section>
